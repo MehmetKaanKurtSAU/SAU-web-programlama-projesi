@@ -15,7 +15,9 @@ body{
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background-color: bisque;
+    background-color: #f8eeec;
+   
+
 }
 img, video {
     width: 100%;

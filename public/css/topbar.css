@@ -3,7 +3,7 @@
     height: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+ 
     font-family: "Josefin Sans", sans-serif;
     background-color: #fff;
  
@@ -15,16 +15,17 @@
     display: flex;
 }
 
-.topbar .left,.topbar .right
+.topbar .left,
+.topbar .right
 {
     flex: 3;
     height: 100%;
-    background-color: cadetblue;
+   
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.topbar .lefti{
+.topbar .left{
     font-size: 1.3rem;
 }
 
@@ -32,15 +33,12 @@
 {
     flex: 6;
     height: 100%;
-    background-color: aqua;
-    align-items: center;
-    justify-content: space-evenly;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
 }
-.topbar.right span img
+.topbar .right span img
 {
     width: 40px;
     height: 40px;
@@ -48,8 +46,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
   
 }
+
 
 /* Scroll animation */
 .topbar .wrapper{
@@ -66,7 +66,7 @@
     transform: translateX(-8px) translateY(-8px);
     opacity: 0;
 }
-.topbar .wrapper.wrapper.active .center,topbar .wrapper.wrapper.active .right
+.topbar .wrapper.wrapper.active .center,.topbar .wrapper.wrapper.active .right
 {
     transform: translateX(0px) translateY(0px);
     opacity: 1;
