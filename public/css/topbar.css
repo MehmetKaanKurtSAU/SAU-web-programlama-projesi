@@ -1,73 +1,80 @@
-.topbar{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
- 
-    font-family: "Josefin Sans", sans-serif;
-    background-color: #fff;
- 
-
-}
-.topbar .wrapper{
-    width: 100%;
-    max-width: 1366px;
-    display: flex;
-}
-
-.topbar .left,
-.topbar .right
-{
-    flex: 3;
-    height: 100%;
-   
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.topbar .left{
-    font-size: 1.3rem;
-}
-
-.topbar .center
-{
-    flex: 6;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-.topbar .right span img
-{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+*{
     
-  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.body{
+    font-family: sans-serif;
+      background-color: white;
+    text-align: center;
+}
+
+.topbar{
+    background-color: snow;
+    text-align: center;
+
+}
+
+.topbar ul li{
+    display: inline-flex;
+    list-style: none;
+    width: 115px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.topbar ul li a{
+    text-decoration: none;
+    
+}
+
+.aktif, .topbar ul li:hover{
+    background-color:antiquewhite;
+    border: 20px;
+    border-radius: 10px;
+
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.topbar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 27px;
+    margin-left: -25px;
+    font-size: 15px;
+}
+
+.topbar ul li:hover .sub-menu-1 ul li{
+    display: block;
+    
+}
+
+.topbar ul li:hover .sub-menu-1 ul li{
+    width: 110px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    background: transparent;
+    text-align: center;
+
 }
 
 
-/* Scroll animation */
-.topbar .wrapper{
-    opacity: 0;
-    transition: all 0.5s;
-    transform: translateY(-7px);
+.sub-menu-2{
+    display: none;
 }
-.topbar .wrapper.active{
-    opacity: 1;
-    transform: translateY(0px);
+.hover-me:hover .sub-menu-2{
+position: absolute;
+display: block;
+margin-top: -52px;
+margin-left: 90px;
+background-color: rgba(255, 255, 255, 0.5);
 }
-.topbar .center, .topbar .right
-{
-    transform: translateX(-8px) translateY(-8px);
-    opacity: 0;
-}
-.topbar .wrapper.wrapper.active .center,.topbar .wrapper.wrapper.active .right
-{
-    transform: translateX(0px) translateY(0px);
-    opacity: 1;
-}
+
+
