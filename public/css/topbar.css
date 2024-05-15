@@ -1,5 +1,5 @@
 *{
-    
+    z-index: +20;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,18 +7,21 @@
 }
 
 .body{
+    z-index: +20;
     font-family: sans-serif;
       background-color: white;
     text-align: center;
 }
 
 .topbar{
+    z-index: +20;
     background-color: snow;
     text-align: center;
 
 }
 
 .topbar ul li{
+    z-index: +20;
     display: inline-flex;
     list-style: none;
     width: 115px;
@@ -27,11 +30,13 @@
 }
 
 .topbar ul li a{
+    z-index: +20;
     text-decoration: none;
     
 }
 
 .aktif, .topbar ul li:hover{
+    z-index: +20;
     background-color:antiquewhite;
     border: 20px;
     border-radius: 10px;
@@ -39,10 +44,12 @@
 }
 
 .sub-menu-1{
+    z-index: +20;
     display: none;
 }
 
 .topbar ul li:hover .sub-menu-1{
+    z-index: +20;
     display: block;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.6);
@@ -52,11 +59,13 @@
 }
 
 .topbar ul li:hover .sub-menu-1 ul li{
+    z-index: +20;
     display: block;
     
 }
 
 .topbar ul li:hover .sub-menu-1 ul li{
+    z-index: +20;
     width: 110px;
     padding: 20px;
     border-bottom: 1px solid black;
@@ -67,9 +76,11 @@
 
 
 .sub-menu-2{
+    z-index: +20;
     display: none;
 }
 .hover-me:hover .sub-menu-2{
+    z-index: +20;
 position: absolute;
 display: block;
 margin-top: -52px;
