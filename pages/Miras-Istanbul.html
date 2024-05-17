@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="/public/css/index.css">
+  <link rel="stylesheet" href="/public/css/slider.css">
 </head>
 <body>
     <div class="topbar">
@@ -43,68 +44,46 @@
             </div>
         </ul>
     </div>
-
-
-
-
-
-    
-<header>
-    <div class="headers target">
-        <img src="../public/img/background/hakkımda.jpg" alt="background">
-        <h1>Hakkımda Şehirler</h1>
-        <h3>Benim Hayatım</h3>
+ <header>
+  <div class="headers target">
+   
+      <h1>Tanıtım</h1>
+      <h3>Benim Hayatım</h3>
 </div></header>
     
-<script src="../public/js/scroll.js"></script>
-
-<div class="hakkımda">
-    <div class="wrapper target">
-        <div class="text">
-            <h1>Istanbul</h1>
-            <p>yazı burada
+ <script src="public/js/scroll.js"></script>
 
 
-
-            </p>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-1.jpg" alt="Slide 1">
+          <p class="caption">1</p>
         </div>
-        <div class="photo">
-            <img src="../public/img/sehirler/şehirler-2.jpg" alt="">
+        <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-2.jpg" alt="Slide 2">
+          <p class="caption">2</p>
         </div>
-
+        <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-3.jpg" alt="Slide 3">
+          <p class="caption">3</p>
+        </div>
+        <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-4.jpg" alt="Slide 3">
+          <p class="caption">4</p>
+        </div> <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-5.jpg" alt="Slide 3">
+          <p class="caption">5</p>
+        </div> <div class="slide">
+          <img src="/public/img/Miraslar/trabzon-6.jpg" alt="Slide 3">
+          <p class="caption">6</p>
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()"></button>
+      <button class="next" onclick="nextSlide()"></button>
     </div>
-    <div class="wrapper target">
-        <div class="text">
-            <h1>Bursa</h1>
-            <p>yazı burada
-
-
-
-            </p>
-        </div>
-        <div class="photo">
-            <img src="../public/img/sehirler/şehirler-3.jpg" alt="">
-        </div>
-
-    </div>
-    <div class="wrapper target">
-        <div class="text">
-            <h1>Trabzon</h1>
-            <p>yazı burada
-
-
-
-            </p>
-        </div>
-        <div class="photo">
-            <img src="../public/img/sehirler/şehirler-1.jpg" alt="">
-        </div>
-
-    </div>
-</div>
-</div>
-
-
-
+  </div>
+  <script src="/public/js/slider.js"></script>
 </body>
 </html>

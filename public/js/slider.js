@@ -5,10 +5,12 @@ const totalSlides = slides.children.length;
 let counter = 0;
 
 const captions = [
-  "Bu birinci resmin altında yer alacak metin.",
-  "Bu ikinci resmin altında yer alacak metin.",
-  "Bu üçüncü resmin altında yer alacak metin.",
-  // Diğer metinler
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
 ];
 
 function nextSlide() {
